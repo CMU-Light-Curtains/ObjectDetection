@@ -1,0 +1,30 @@
+title: "Base"
+defaults:
+  difficulty: 1
+  overlap: 0.5
+  split: "valid"
+dir_prefix: "sid_trained_models/interpDP/vkitti/second"
+dirs:
+  - dir: "base"
+    steps: [0, 1, 2, 3]
+  - dir: "ablations/sb_lidar_only"
+    steps: [0]
+labels: ["Step 0", "Step 1", "Step 2", "Step 3", "SBL-Only"]
+
+# title: "Baselines (1 LC)"
+# labels: ["Random", "Fixed15", "Fixed30", "Fixed45", "PllMaxEnt", "greedy-vel", "greedy-rnd", "BASE"]
+# defaults:
+#   difficulty: 1
+#   overlap: 0.5
+#   split: "valid"
+#   steps: [1]
+# dir_prefix: "sid_trained_models/interpDP/vkitti/second"
+# dirs:
+#   - dir: "baselines/random"
+#   - dir: "baselines/fixed_15"
+#   - dir: "baselines/fixed_30"
+#   - dir: "baselines/fixed_45"
+#   - dir: "baselines/pllmaxent"
+#   - dir: "baselines/gdp_mvel"
+#   - dir: "baselines/gdp_rand"
+#   - dir: "base"
